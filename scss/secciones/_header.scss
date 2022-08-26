@@ -1,0 +1,58 @@
+header {
+  background-color: lightgray;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  .logo {
+    height: 7vh;
+    border-radius: 10px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 5px;
+    font-size: 1vw;
+    li {
+      list-style: none;
+      text-align: center;
+      a {
+        .ancho {
+          display: block;
+          background: rgb(184, 183, 183);
+          width: 125px;
+          border-radius: 5px;
+          margin: 2px;
+          &:hover {
+            /* background-image: url(/img/parrilla.png); */
+            background: #ff163d;
+            color: white;
+          }
+        }
+        text-decoration: none;
+        list-style: none;
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+    header{
+        nav{
+            font-size: 2vw;
+        }
+    }
+}
+@media (max-width: 550px) {
+    header{
+        .logo{
+            height: 9vh;
+        }
+        nav{
+            font-size: 4vw;
+        }
+    }
+}

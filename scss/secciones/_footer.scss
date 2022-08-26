@@ -1,0 +1,33 @@
+footer{
+    margin-top: 20px;
+    background-color: lightgray;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5vw;
+    .columna{
+        width: 33%;
+        text-align: center;
+    }
+    .logo{
+        height: 4vh;
+    }
+}
+@media (max-width: 750px) {
+    footer{
+        font-size: 2.5vw;
+    }
+}
+@media (max-width: 550px) {
+    footer{
+        flex-direction: column;
+        font-size: 3.5vw;
+       }
+}
+
+
+
+
+
+
